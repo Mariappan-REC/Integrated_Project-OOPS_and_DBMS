@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS commitshield;
+
+USE commitshield;
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(100) NOT NULL,
+    estimated_hours DECIMAL(6,2) NOT NULL,
+    deadline DATETIME NOT NULL,
+    priority VARCHAR(20) NOT NULL,
+    status VARCHAR(20) NOT NULL DEFAULT 'PENDING'
+);

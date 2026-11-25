@@ -1,0 +1,17 @@
+# Compiled Java files
+out/
+*.class
+
+# IDE settings
+.vscode/
+.idea/
+
+# Database credentials
+.env
+.env.*
+!.env.example
+secrets.properties
+
+# Logs and temporary files
+*.log
+*.tmp
